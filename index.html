@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://file.moyublog.com/d/file/2023-04-13/1ef77c73e545c6496c5a7750c6c66ee4.jpg'); /* 替换为您的背景图片路径 */
+            background-image: url('https://file.moyublog.com/d/file/2023-04-13/1ef77c73e545c6496c5a7750c6c66ee4.jpg'); /* 背景图片 */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -102,6 +102,26 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .story-card {
+                padding: 15px; /* 减少故事卡片内边距 */
+            }
+            nav a {
+                margin: 0 5px; /* 减少导航按钮的间距 */
+                padding: 8px 15px; /* 调整按钮大小 */
+            }
+        }
+        @media (max-width: 480px) {
+            .story-card {
+                padding: 10px; /* 进一步减少故事卡片内边距 */
+            }
+            nav a {
+                margin: 0 2px; /* 进一步减少导航按钮的间距 */
+                padding: 6px 10px; /* 进一步调整按钮大小 */
+            }
         }
     </style>
 </head>
