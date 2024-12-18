@@ -101,6 +101,26 @@
         .service-card p {
             font-size: 14px;
         }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .service-card {
+                width: 45%; /* 在手机上调整为两列 */
+            }
+            nav a {
+                margin: 0 5px; /* 减少导航按钮的间距 */
+                padding: 8px 15px; /* 调整按钮大小 */
+            }
+        }
+        @media (max-width: 480px) {
+            .service-card {
+                width: 90%; /* 在超小屏幕上单列显示 */
+            }
+            nav a {
+                margin: 0 2px; /* 进一步减少导航按钮的间距 */
+                padding: 6px 10px; /* 进一步调整按钮大小 */
+            }
+        }
     </style>
 </head>
 <body>
