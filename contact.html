@@ -103,6 +103,32 @@
         .contact-form button:hover {
             background-color: #0097a7;
         }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 15px; /* 减少表单内边距 */
+            }
+            .contact-form input, .contact-form textarea {
+                padding: 8px; /* 调整输入框大小 */
+            }
+            nav a {
+                margin: 0 5px; /* 减少导航按钮的间距 */
+                padding: 8px 15px; /* 调整按钮大小 */
+            }
+        }
+        @media (max-width: 480px) {
+            .contact-form {
+                padding: 10px; /* 进一步减少表单内边距 */
+            }
+            .contact-form input, .contact-form textarea {
+                padding: 6px; /* 进一步调整输入框大小 */
+            }
+            nav a {
+                margin: 0 2px; /* 进一步减少导航按钮的间距 */
+                padding: 6px 10px; /* 进一步调整按钮大小 */
+            }
+        }
     </style>
 </head>
 <body>
