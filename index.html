@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://file.moyublog.com/d/file/2023-04-13/1ef77c73e545c6496c5a7750c6c66ee4.jpg'); /* 替换为您的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+        nav a {
+            display: inline-block;
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #00bcd4;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #00bcd4;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        nav a:active {
+            transform: translateY(0);
+        }
+        main {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* 半透明背景 */
+            border-radius: 10px;
+            margin: 20px;
+        }
+        main h2 {
+            color: #00bcd4;
+            text-align: center;
+        }
+        main p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .story-card {
+            background-color: rgba(245, 161, 161, 0.81); /* 每个故事的背景 */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .story-card:hover {
+            transform: translateY(-5px); /* 鼠标悬停时向上移动 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+        }
+        .story-card h3 {
+            color: #ff5722; /* 故事标题颜色 */
+            margin-bottom: 10px;
+        }
+        .story-card .icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px; /* 图标宽度 */
+            height: 40px; /* 图标高度 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .story-card .icon.crow {
+            background-image: url('https://s1.aigei.com/prevfiles/d0fe17291a5548f5aec91c2a25a4746d.png?e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:uThaWZfACbXUKBjZuFk4xbHl1zA='); /* 乌鸦图标 */
+        }
+        .story-card .icon.turtle {
+            background-image: url('https://s1.4sai.com/prevfiles/c768790e612444cca7c6b786a6a5f8d1.png?e=1735488000&token=1srnZGLKZ0Aqlz6dk7yF4SkiYf4eP-YrEOdM1sob:qrw8yNt5EPeMZGU36En3qnzJp0g='); /* 乌龟图标 */
+        }
+        .story-card .icon.wolf {
+            background-image: url('https://s1.aigei.com/prevfiles/4a1e7f6ecb0048199d26981fcff503a8.png?e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:4yOCg__LqhUzl2MNQeV69Oe5BUY='); /* 狼图标 */
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>欢迎来到我的网页</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我们</a>
+        <a href="services.html">服务</a>
+        <a href="contact.html">联系我们</a>
+    </nav>
+
+    <main>
+        <section id="stories">
+            <h2>寓言小故事</h2>
+            
+            <!-- 故事 1：乌鸦与狐狸 -->
+            <div class="story-card">
+                <div class="icon crow"></div> <!-- 乌鸦图标 -->
+                <h3>1. 乌鸦与狐狸</h3>
+                <p>
+                    一只乌鸦嘴里叼着一块奶酪，站在树枝上。狐狸看到后，想得到那块奶酪。于是，狐狸对乌鸦说：“亲爱的乌鸦，您的歌声一定很美妙，能唱一首给我听吗？”乌鸦听了非常高兴，张开嘴唱歌，奶酪掉了下来。狐狸捡起奶酪，笑着说：“谢谢您的奶酪，您的歌声确实很美妙，但您的头脑却不太聪明。”
+                </p>
+            </div>
+
+            <!-- 故事 2：龟兔赛跑 -->
+            <div class="story-card">
+                <div class="icon turtle"></div> <!-- 乌龟图标 -->
+                <h3>2. 龟兔赛跑</h3>
+                <p>
+                    一只兔子和一只乌龟比赛跑步。兔子认为自己跑得快，便在半路上停下来休息。乌龟虽然慢，但坚持不懈，最终赢得了比赛。这个故事告诉我们，骄傲和懒惰会导致失败，而坚持和努力才能成功。
+                </p>
+            </div>
+
+            <!-- 故事 3：狼来了 -->
+            <div class="story-card">
+                <div class="icon wolf"></div> <!-- 狼图标 -->
+                <h3>3. 狼来了</h3>
+                <p>
+                    一个牧童在山上放羊，无聊时大喊“狼来了！”村民们赶来帮忙，却发现是假的。几次之后，当狼真的来了，牧童再次呼救，但村民们不再相信他。这个故事告诉我们，撒谎会失去信任，最终害了自己。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 我的网页. 保留所有权利.</p>
+    </footer>
+
+</body>
+</html>
